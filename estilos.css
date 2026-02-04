@@ -521,6 +521,7 @@ h3 {
     backdrop-filter: blur(10px);
 }
 
+
 .logo {
     font-size: 1.5rem;
     font-weight: bold;
@@ -736,5 +737,68 @@ h3 {
         display: none;
     }
 
-    /* Aquí podrías añadir un menú hamburguesa luego */
+
+    @media (max-width: 768px) {
+        .navbar {
+            padding: 15px 5%;
+        }
+
+        .logo {
+            font-size: 1.3rem;
+        }
+    }
+
+    @media (max-width: 768px) {
+        .nombre {
+            font-size: 2.8rem;
+        }
+
+        .hero h2 {
+            font-size: 1.2rem;
+        }
+
+        .botones a {
+            display: block;
+            margin: 10px 0;
+        }
+    }
+
+    @media (max-width: 480px) {
+        #sobre-mi .content2 {
+            grid-template-columns: 1fr;
+        }
+    }
+
+    @media (max-width: 768px) {
+        #habilidades {
+            padding: 3rem 5%;
+        }
+    }
+
+    @media (max-width: 768px) {
+        .proyecto-info {
+            padding: 25px;
+        }
+
+        .links-proyecto {
+            flex-direction: column;
+        }
+
+        .links-proyecto a {
+            text-align: center;
+        }
+    }
+
+    @media (max-width: 768px) {
+        .contacto {
+            padding: 5rem 5%;
+        }
+
+        .contacto-info,
+        .contacto-cta {
+            padding: 30px;
+        }
+    }
+
+
 }
