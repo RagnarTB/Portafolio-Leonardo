@@ -245,7 +245,46 @@
             </div>
 
         </div>
+
         <div class="proyecto-card invertido" data-aos="fade-up">
+            <div class="proyecto-imagen">
+                <img src="image6.png" alt="Sistema Veterinario">
+            </div>
+
+            <div class="proyecto-info">
+                <h2>Sistema de gestión Veterinaria</h2>
+                <p>Aplicación web completa para la gestión de pacientes, citas, inventario, caja, etc. Incluye panel
+                    administrativo y de paciente, ademas de reportes.</p><br>
+
+                <h3>Problema</h3>
+                <p>Clínicas veterinarias necesitaban digitalizar su gestión.</p><br>
+
+                <h3>Solución</h3>
+                <p>Sistema web integral.</p><br>
+
+                <h3>Tecnologías:</h3>
+                <div class="tecnologias">
+                    <span class="etiqueta">Java</span>
+                    <span class="etiqueta">Springboot</span>
+                    <span class="etiqueta">Angular</span>
+                    <span class="etiqueta">CI/CD Github actions</span>
+                    <span class="etiqueta">PostgreSQL</span>
+                    <span class="etiqueta">Docker</span>
+                    <span class="etiqueta">Oracle cloud</span>
+                </div>
+
+                <div class="links-proyecto">
+                    <a class="btn-proyecto-fill" href="https://github.com/RagnarTB/sistema-veterinario" target="_blank">
+                        <i class="fa-brands fa-github"></i> Código
+                    </a>
+                    <a class="btn-proyecto-outline" href="http://ragnarvet.duckdns.org/login" target="_blank">
+                        <i class="fa-solid fa-link"></i> Demo
+                    </a>
+                </div>
+            </div>
+
+        </div>
+        <div class="proyecto-card" data-aos="fade-up">
             <div class="proyecto-imagen">
                 <img src="image2.png" alt="Sistema Paola-Deco">
             </div>
@@ -284,7 +323,7 @@
             </div>
         </div>
 
-        <div class="proyecto-card" data-aos="fade-up">
+        <div class="proyecto-card invertido" data-aos="fade-up">
             <div class="proyecto-imagen">
                 <img src="image3.png" alt="Catalogo oishi">
             </div>
@@ -320,7 +359,7 @@
 
         </div>
 
-        <div class="proyecto-card invertido" data-aos="fade-up">
+        <div class="proyecto-card" data-aos="fade-up">
             <div class="proyecto-imagen">
                 <img src="image4.png" alt="Morillo boxing">
             </div>
@@ -354,7 +393,7 @@
             </div>
         </div>
 
-        <div class="proyecto-card" data-aos="fade-up">
+        <div class="proyecto-card invertido" data-aos="fade-up">
             <div class="proyecto-imagen">
                 <img src="image5.png" alt="Catalogo oishi">
             </div>
@@ -396,58 +435,166 @@
     </section>
 
     <section id="formacion" class="formacion">
-        <h1>Formación y <span class="texto-resaltado">Certificaciones</span></h1>
+        <h1 data-aos="fade-up">Formación y <span class="texto-resaltado">Certificaciones</span></h1>
 
-        <div class="formacion-card" data-aos="fade-right" data-aos-delay="100">
-            <h2><i class="fa-solid fa-book-open"></i> Educación</h2>
+        <!-- Columna Izquierda: Educación y Cursos -->
+        <div class="formacion-columna" data-aos="fade-right" data-aos-delay="100">
+            <h2 class="columna-titulo"><i class="fa-solid fa-graduation-cap"></i> Educación y Cursos</h2>
 
-            <div class="educacion-card">
-                <span class="etiqueta">En curso</span>
-                <h3>Ingeniería de Sistemas</h3>
-                <p>Universidad</p>
-                <p><i class="fa-solid fa-calendar-days"></i> <small>2023 - Presente</small></p>
-                <p>Formación en desarrollo de software, arquitectura de sistemas, bases de datos y metodologías ágiles.
-                </p>
+            <div class="timeline">
+                <!-- Item 1: Universidad -->
+                <div class="timeline-item">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-content">
+                        <div class="timeline-header">
+                            <h3>Ingeniería de Sistemas</h3>
+                            <span class="timeline-date"><i class="fa-solid fa-calendar-days"></i> 2023 - Presente</span>
+                        </div>
+                        <div class="timeline-institution">Universidad</div>
+                        <div class="timeline-tag-container">
+                            <span class="timeline-tag">En curso</span>
+                        </div>
+                        <p class="timeline-description">
+                            Formación en desarrollo de software, arquitectura de sistemas, bases de datos y metodologías
+                            ágiles.
+                        </p>
+                    </div>
+                </div>
+
+                <!-- Item 2: Certificación JavaScript -->
+                <!--<div class="timeline-item">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-content">
+                        <div class="timeline-header">
+                            <h3>JavaScript Moderno</h3>
+                            <span class="timeline-date"><i class="fa-solid fa-calendar-days"></i> 2025</span>
+                        </div>
+                        <div class="timeline-institution">Plataforma Online</div>
+                        <div class="timeline-tag-container">
+                            <span class="timeline-tag-curso">Curso Completado</span>
+                        </div>
+                        <p class="timeline-description">
+                            Desarrollo avanzado con JavaScript moderno, ES6+, asincronía, manipulación del DOM y buenas prácticas de programación.
+                        </p>
+                    </div>
+                </div>
+
+                 Item 3: Certificación Git & GitHub 
+                <div class="timeline-item">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-content">
+                        <div class="timeline-header">
+                            <h3>Git & GitHub</h3>
+                            <span class="timeline-date"><i class="fa-solid fa-calendar-days"></i> 2025</span>
+                        </div>
+                        <div class="timeline-institution">Plataforma Online</div>
+                        <div class="timeline-tag-container">
+                            <span class="timeline-tag-curso">Curso Completado</span>
+                        </div>
+                        <p class="timeline-description">
+                            Control de versiones, flujos de trabajo colaborativos (Gitflow), resolución de conflictos y gestión de repositorios en GitHub.
+                        </p>
+                    </div>
+                </div> -->
             </div>
         </div>
 
-        <div class="formacion-card" data-aos="fade-right" data-aos-delay="100">
-            <h2><i class="fa-solid fa-book-open"></i> Insignias</h2>
+        <!-- Columna Derecha: Insignias Cisco & IBM -->
+        <div class="insignias-columna" data-aos="fade-left" data-aos-delay="200">
+            <h2 class="columna-titulo"><i class="fa-solid fa-award"></i> Credenciales Oficiales</h2>
 
-            <div class="educacion-card">
-                <span class="etiqueta">Cisco</span>
-                <h3>CCNA: Introduction to Networks</h3><br>
-                <a href="https://www.credly.com/badges/48a1fbd4-6a23-46b3-9c62-e7c5fb5c5762/public_url" target="_blank">
-                    <img src="i1.png" alt="insignia CCNA: Introduction to Networks">
-                </a><br>
-                <h3>CCNA: Introduction to Cybersecurity</h3><br>
-                <a href="https://www.credly.com/badges/4944f531-e887-463d-a0cd-e77f57d6733c/public_url" target="_blank">
-                    <img src="i2.png" alt="insignia Introduction to Cybersecurity">
+            <div class="insignias-grid">
+                <!-- Insignia 1 -->
+                <a href="https://www.credly.com/badges/48a1fbd4-6a23-46b3-9c62-e7c5fb5c5762/public_url" target="_blank"
+                    class="insignia-card">
+                    <div class="insignia-img-container">
+                        <img src="i1.png" alt="CCNA: Introduction to Networks">
+                    </div>
+                    <div class="insignia-info">
+                        <span class="insignia-issuer">Cisco</span>
+                        <h4>CCNA: Introduction to Networks</h4>
+                        <span class="insignia-verificar">
+                            Verificar <i class="fa-solid fa-arrow-up-right-from-square"></i>
+                        </span>
+                    </div>
                 </a>
 
+                <!-- Insignia 2 -->
+                <a href="https://www.credly.com/badges/e2738052-af91-49da-9016-20aa4ff0f1a8/public_url" target="_blank"
+                    class="insignia-card">
+                    <div class="insignia-img-container">
+                        <img src="i2.png" alt="Introduction to Cybersecurity">
+                    </div>
+                    <div class="insignia-info">
+                        <span class="insignia-issuer">Cisco</span>
+                        <h4>Introduction to Cybersecurity</h4>
+                        <span class="insignia-verificar">
+                            Verificar <i class="fa-solid fa-arrow-up-right-from-square"></i>
+                        </span>
+                    </div>
+                </a>
+
+                <!-- Insignia 3 -->
+                <a href="https://www.credly.com/badges/90e31e6f-14f4-4405-bca2-ba927eb0967c/public_url" target="_blank"
+                    class="insignia-card">
+                    <div class="insignia-img-container">
+                        <img src="i3.png" alt="Cyber Threat Management">
+                    </div>
+                    <div class="insignia-info">
+                        <span class="insignia-issuer">Cisco</span>
+                        <h4>Cyber Threat Management</h4>
+                        <span class="insignia-verificar">
+                            Verificar <i class="fa-solid fa-arrow-up-right-from-square"></i>
+                        </span>
+                    </div>
+                </a>
+
+                <!-- Insignia 4 -->
+                <a href="https://www.credly.com/badges/8de832b8-6617-446c-96be-215091a41de2/public_url" target="_blank"
+                    class="insignia-card">
+                    <div class="insignia-img-container">
+                        <img src="i4.png" alt="Endpoint Security">
+                    </div>
+                    <div class="insignia-info">
+                        <span class="insignia-issuer">Cisco</span>
+                        <h4>Endpoint Security</h4>
+                        <span class="insignia-verificar">
+                            Verificar <i class="fa-solid fa-arrow-up-right-from-square"></i>
+                        </span>
+                    </div>
+                </a>
+
+                <!-- Insignia 5 -->
+                <a href="https://www.credly.com/badges/70f55299-6c58-4c04-ab52-cfe57062b966/public_url" target="_blank"
+                    class="insignia-card">
+                    <div class="insignia-img-container">
+                        <img src="i5.png" alt="Network Defense">
+                    </div>
+                    <div class="insignia-info">
+                        <span class="insignia-issuer">Cisco</span>
+                        <h4>Network Defense</h4>
+                        <span class="insignia-verificar">
+                            Verificar <i class="fa-solid fa-arrow-up-right-from-square"></i>
+                        </span>
+                    </div>
+                </a>
+
+                <!-- Insignia 6 -->
+                <a href="https://www.credly.com/badges/459d97d6-b2ec-4932-abd7-4f41671b62ae/public_url" target="_blank"
+                    class="insignia-card">
+                    <div class="insignia-img-container">
+                        <img src="i6.png" alt="Enterprise Design Thinking Practitioner">
+                    </div>
+                    <div class="insignia-info">
+                        <span class="insignia-issuer">IBM</span>
+                        <h4>Enterprise Design Thinking Practitioner</h4>
+                        <span class="insignia-verificar">
+                            Verificar <i class="fa-solid fa-arrow-up-right-from-square"></i>
+                        </span>
+                    </div>
+                </a>
             </div>
         </div>
-
-        <!--<div class="certificaciones-card" data-aos="fade-left" data-aos-delay="300">
-            <h2><i class="fa-solid fa-award"></i> Certificaciones</h2>
-
-            <div class="certificado-card">
-                <i class="fa-solid fa-medal"></i>
-                <h2>
-                    JavaScript Moderno
-                    <span>Plataforma Online • 2025</span>
-                </h2>
-            </div>
-
-            <div class="certificado-card">
-                <i class="fa-solid fa-medal"></i>
-                <h2>
-                    Git & GitHub
-                    <span>Plataforma Online • 2025</span>
-                </h2>
-            </div>
-
-        </div>-->
     </section>
 
     <section id="contacto" class="contacto">

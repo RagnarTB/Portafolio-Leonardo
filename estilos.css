@@ -389,121 +389,267 @@ h3 {
     background-color: var(--color-fondo2);
     display: flex;
     flex-wrap: wrap;
-    gap: 40px;
+    gap: 50px;
     justify-content: center;
 }
 
-.formacion>h1 {
+.formacion > h1 {
     width: 100%;
     text-align: center;
     margin-bottom: 50px;
 }
 
 /* Columnas */
-.formacion-card,
-.certificaciones-card {
+.formacion-columna,
+.insignias-columna {
     flex: 1;
     min-width: 320px;
 }
 
-.formacion-card h1,
-.certificaciones-card h1 {
+.columna-titulo {
     font-size: 1.5rem;
-    text-transform: capitalize;
-    margin-bottom: 25px;
+    color: var(--color-blanco);
+    margin-bottom: 30px;
     display: flex;
     align-items: center;
-    gap: 15px;
+    gap: 12px;
 }
 
-/* Estilo de la Tarjeta de Educación (Izquierda) */
-.educacion-card {
-    background-color: var(--color-cards);
-    border: 1px solid rgba(100, 255, 218, 0.1);
-    border-radius: 15px;
-    padding: 30px;
+.columna-titulo i {
+    color: var(--color-principal);
+}
+
+/* --- LÍNEA DE TIEMPO (Timeline) --- */
+.timeline {
     position: relative;
+    padding-left: 30px;
+    border-left: 2px solid rgba(100, 255, 218, 0.15);
+    margin-left: 10px;
+}
+
+.timeline-item {
+    position: relative;
+    margin-bottom: 30px;
+}
+
+.timeline-item:last-child {
+    margin-bottom: 0;
+}
+
+.timeline-dot {
+    position: absolute;
+    left: -37px;
+    top: 5px;
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    background-color: var(--color-fondo2);
+    border: 2px solid var(--color-principal);
+    box-shadow: 0 0 10px rgba(100, 255, 218, 0.5);
+    transition: all 0.3s ease;
+}
+
+.timeline-item:hover .timeline-dot {
+    background-color: var(--color-principal);
+    box-shadow: 0 0 15px var(--color-principal);
+}
+
+.timeline-content {
+    background-color: var(--color-cards);
+    border: 1px solid rgba(100, 255, 218, 0.03);
+    border-radius: 14px;
+    padding: 25px;
+    transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
     box-shadow: 0 10px 30px -15px rgba(2, 12, 27, 0.5);
 }
 
-.educacion-card h3 {
-    display: inline-block;
-    margin-bottom: 5px;
+.timeline-content:hover {
+    transform: translateY(-5px);
+    border-color: rgba(100, 255, 218, 0.2);
+    box-shadow: 0 15px 30px rgba(2, 12, 27, 0.7);
 }
 
-.educacion-card .etiqueta {
-    float: right;
-    background-color: rgba(100, 255, 218, 0.1);
+.timeline-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin-bottom: 8px;
+}
+
+.timeline-header h3 {
+    margin: 0;
+    font-size: 1.15rem;
+    color: var(--color-blanco);
+    font-weight: 600;
+}
+
+.timeline-date {
+    font-size: 0.8rem;
+    color: #8892b0;
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    font-weight: 500;
+}
+
+.timeline-institution {
+    font-size: 0.9rem;
+    color: var(--color-principal);
+    margin-bottom: 12px;
+    font-weight: 500;
+}
+
+.timeline-tag-container {
+    margin-bottom: 12px;
+}
+
+.timeline-tag {
+    background-color: rgba(100, 255, 218, 0.08);
     border: 1px solid var(--color-principal);
+    color: var(--color-principal);
+    padding: 3px 10px;
+    border-radius: 12px;
+    font-size: 0.75rem;
+    font-family: monospace;
+    font-weight: bold;
 }
 
-.educacion-card p {
-    margin-top: 10px;
+.timeline-tag-curso {
+    background-color: rgba(178, 255, 255, 0.08);
+    border: 1px solid var(--color-letras);
+    color: var(--color-letras);
+    padding: 3px 10px;
+    border-radius: 12px;
+    font-size: 0.75rem;
+    font-family: monospace;
+    font-weight: bold;
+}
+
+.timeline-description {
+    font-size: 0.9rem;
     line-height: 1.6;
     color: var(--color-texto);
+    margin: 0;
 }
 
-.educacion-card i {
-    color: var(--color-principal);
-    margin-right: 8px;
+/* --- CUADRÍCULA DE INSIGNIAS (Badges Grid) --- */
+.insignias-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
 }
 
-/* Estilo de las Tarjetas de Certificados (Derecha) */
-.certificado-card {
+.insignia-card {
     background-color: var(--color-cards);
-    border: 1px solid rgba(100, 255, 218, 0.05);
-    border-radius: 10px;
-    padding: 20px;
+    border: 1px solid rgba(100, 255, 218, 0.03);
+    border-radius: 16px;
+    padding: 25px 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    text-decoration: none;
+    transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
+    box-shadow: 0 10px 25px -15px rgba(2, 12, 27, 0.5);
+    height: 100%;
+}
+
+.insignia-card:hover {
+    transform: translateY(-8px);
+    border-color: var(--color-principal);
+    box-shadow: 0 15px 30px rgba(100, 255, 218, 0.08);
+}
+
+.insignia-img-container {
+    width: 100px;
+    height: 100px;
     margin-bottom: 15px;
     display: flex;
     align-items: center;
+    justify-content: center;
+    position: relative;
+    border-radius: 50%;
+    background-color: rgba(2, 7, 24, 0.3);
+    padding: 10px;
     transition: all 0.3s ease;
-    cursor: default;
 }
 
-.certificado-card:hover {
-    transform: translateX(10px);
-    border-color: var(--color-principal);
-    background-color: rgba(23, 32, 52, 0.8);
+.insignia-card:hover .insignia-img-container {
+    background-color: rgba(100, 255, 218, 0.05);
+    box-shadow: inset 0 0 15px rgba(100, 255, 218, 0.1);
 }
 
-.certificado-card h2 {
-    font-size: 1.1rem;
-    font-weight: 500;
-    margin: 0;
-    color: var(--color-blanco);
+.insignia-img-container img {
+    max-width: 100%;
+    max-height: 100%;
+    object-fit: contain;
+    transition: transform 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+
+.insignia-card:hover .insignia-img-container img {
+    transform: scale(1.12) rotate(2deg);
+    filter: drop-shadow(0 0 8px rgba(100, 255, 218, 0.6));
+}
+
+.insignia-info {
     display: flex;
     flex-direction: column;
+    justify-content: space-between;
+    height: calc(100% - 115px); /* Restar contenedor imagen y margen */
+    width: 100%;
 }
 
-/* Subtexto dentro del certificado (Plataforma y año) */
-.certificado-card h2 span {
-    font-size: 0.85rem;
-    color: var(--color-texto);
-    margin-top: 4px;
-    font-weight: normal;
-}
-
-.certificado-card i {
+.insignia-issuer {
+    font-size: 0.7rem;
+    font-family: monospace;
     color: var(--color-principal);
-    font-size: 1.4rem;
-    margin-right: 20px;
-    background: rgba(100, 255, 218, 0.1);
-    padding: 10px;
-    border-radius: 8px;
+    letter-spacing: 1.5px;
+    text-transform: uppercase;
+    margin-bottom: 8px;
+}
+
+.insignia-card h4 {
+    font-size: 0.9rem;
+    font-weight: 600;
+    color: var(--color-blanco);
+    line-height: 1.4;
+    margin: 0 0 12px 0;
+    transition: color 0.3s ease;
+}
+
+.insignia-card:hover h4 {
+    color: var(--color-principal);
+}
+
+.insignia-verificar {
+    font-size: 0.75rem;
+    color: #8892b0;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 6px;
+    font-weight: 500;
+    transition: all 0.3s ease;
+    margin-top: auto;
+}
+
+.insignia-card:hover .insignia-verificar {
+    color: var(--color-blanco);
 }
 
 /* Responsivo */
-@media (max-width: 768px) {
+@media (max-width: 900px) {
     .formacion {
         padding: 3rem 5%;
+        gap: 30px;
     }
+}
 
-    .educacion-card .etiqueta {
-        float: none;
-        display: block;
-        width: fit-content;
-        margin-bottom: 15px;
+@media (max-width: 600px) {
+    .insignias-grid {
+        grid-template-columns: 1fr;
     }
 }
 
